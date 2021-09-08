@@ -18,7 +18,7 @@ def check():
 
     if current_oracle_update_age > timedelta(minutes=25):
         requests.post(DISCORD_WEBHOOK, json={
-            "content": ":warning: The oracle is > 25 minutes out of date! Please ensure there's a poster update or visit (harbinger.live)[<https://harbinger.live>] to update Kolibri manually (if possible)!"
+            "content": ":warning: The oracle is > 25 minutes out of date! Please ensure there's a poster update or visit <https://harbinger.live> to update Kolibri manually (if possible)!"
         })
         print("[{}] Over 25 mins!".format(datetime.now()))
     elif current_oracle_update_age > timedelta(minutes=30):
