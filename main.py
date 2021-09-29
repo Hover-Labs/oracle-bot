@@ -8,7 +8,7 @@ HARBINGER_ORACLE = 'KT1AdbYiPYb5hDuEuVrfxmFehtnBCXv4Np7r'
 DISCORD_WEBHOOK = os.environ['DISCORD_WEBHOOK']
 
 def check():
-    client = pytezos.using(shell='https://rpc.tzbeta.net')
+    client = pytezos.using(shell='https://mainnet.api.tez.ie')
 
     contract = client.contract(HARBINGER_ORACLE)
 
